@@ -1,0 +1,66 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh ;
+    background-color: rgb(51, 39, 73);
+}
+.conteiner{
+    background-color: rgba(0, 0, 0, 0.315) ;
+    border-radius: 5px;
+    backdrop-filter: blur(10px);
+    z-index: 10;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.603);
+    border-top: 0.003px solid rgba(255, 255, 255, 0.158);
+    border-left: 0.003px solid rgba(255, 255, 255, 0.158);
+}
+.conteiner .calculator{
+    position: relative;
+    display: grid;
+}
+.conteiner .calculator .value{
+    grid-column: span 4;
+    width: 300px;
+    height: 95px;
+    outline: none;
+    border: none;
+    font-size: 30pt;
+    text-align: right;
+    padding: 10px;
+    background-color: transparent;
+    color: white;
+    border: 0.003px solid rgba(255, 255, 255, 0.048);
+}
+span{
+    display: grid;
+    height: 75px;
+    width: 75px;
+    place-items: center;
+    cursor: pointer;
+    color: white;
+    border: 0.003px solid rgba(255, 255, 255, 0.041);
+    transition: 1s;
+}
+.limpar{
+    grid-column: span 2;
+    width: 150px;
+}
+.plus{
+    grid-row: span 2;
+    height: 150px;
+}
+span:hover{
+    background-color: teal;
+}
+span:active{
+    background-color: turquoise;
+    font-weight: bolder;
+}
+/*VictoR-cLever*/
